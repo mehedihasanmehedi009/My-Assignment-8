@@ -8,13 +8,11 @@ const Home = () => {
            <div className='text-center mt-15'>
             <h1 className='md:text-8xl text-4xl font-bold'>We Build <br />
 <span className='bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps</h1>
-<p className='mt-4 text-gray-500'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+<p className='mt-4 text-gray-500 p-5'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
            </div>
-           <div className='text-center'>
-            <a className='btn' href="https://chatgpt.com/c/68e530a1-d810-8323-a62e-26c76bf64a37"><FaGooglePlay /> Google Play</a>  
-           <a className='btn' href=""> <FaAppStoreIos /> App Store</a>
-
-
+           <div className='text-center mt-3 mb-5 '>
+            <a className='btn text-[19px] p-5 ' href="https://play.google.com/?authuser=0"><FaGooglePlay /> Google Play</a>   
+           <a className='btn text-[19px] p-5' href="https://appstoreconnect.apple.com/"> <FaAppStoreIos /> App Store</a>
            </div>
         </div>
     );
