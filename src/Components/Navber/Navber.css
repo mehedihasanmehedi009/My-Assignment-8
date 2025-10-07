@@ -1,0 +1,14 @@
+ nav  a.active {
+ gap: 4px;
+ color:blue;
+  text-decoration: underline;
+  font-weight: 800;
+}
+ 
+nav a{
+  padding: 30px;
+  font-size: 18px;
+   gap: 20px;
+   font-weight: 600;
+}
+ 
