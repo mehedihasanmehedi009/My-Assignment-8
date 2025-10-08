@@ -39,6 +39,28 @@ import React from 'react';
                 <div className='ml-12'> <img src={El29} alt="" /></div>
               </div>
            </div>
+           <div className=' bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]'>
+           <div className='p-9'>
+              <h1 className='text-2xl text-white md:text-6xl font-bold text-center'>Trusted by Millions, Built for You</h1>
+             <div className=' flex justify-around mt-5'>
+              <div>
+              <p className='text-white '>Total Downloads</p>
+              <h1 className='md:text-6xl font-bold text-white mt-2'>29.6M</h1>
+              <p className='text-white mt-2'>21% more than last month</p>
+             </div>
+            <div>
+              <p className='text-white'>Total Reviews</p>
+              <h1 className='md:text-6xl font-bold text-white mt-2'>906K</h1>
+              <p className='text-white mt-2'>46% more than last month </p>
+             </div>
+             <div>
+              <p className='text-white'>Active Apps</p>
+              <h1 className='md:text-6xl font-bold text-white mt-2'>132+</h1>
+              <p className='text-white mt-2'>31 more will Launch</p>
+             </div>
+             </div>
+           </div>
+           </div>
         </div>
     );
 };
