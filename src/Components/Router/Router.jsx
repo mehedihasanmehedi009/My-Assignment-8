@@ -11,6 +11,7 @@ import CardDiteils from "../Pages/CardDiteils";
     path: "/",
     element:<MainLoyed/>,
     errorElement:<Erroes/>,
+    hydrateFallbackElement:<p> <span className="loading loading-infinity loading-xl"></span></p>,
    children:[
      { index:true,
     element:<Home/>

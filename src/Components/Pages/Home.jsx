@@ -8,11 +8,15 @@ import React from 'react';
   import El27 from  "../../assets/Ellipse 27.png"
   import El28 from  "../../assets/Ellipse 28.png"
   import El29 from  "../../assets/Ellipse 29.png"
+import useCoustomHook from '../useHook/AppHoouk';
+import HomeCadr from './HomeCadr';
+import { Link } from 'react-router';
 
 
 
  const Home = () => {
- 
+    const { products} = useCoustomHook()
+    console.log(products)
     return (
         <div>
            <div className='text-center mt-15'>
@@ -30,7 +34,7 @@ import React from 'react';
                 <div><img className='m-5' src={El26} alt="" /></div>
                 <div><img className='' src={El28} alt="" /></div>
               </div>
-              <div className='p-5 md:p-0'>
+              <div className='px-4 md:px-0'>
             <img src={Ip} alt="" />
               </div>
               <div className=' md:block hidden lg:mr-[500px] mt-[100px]' >
@@ -61,6 +65,20 @@ import React from 'react';
              </div>
            </div>
            </div>
+           <div className='text-center mt-7 mb-4'>
+             <h1 className='text-5xl font-bold'>Trending Apps</h1>
+             <p className='text-gray-400 mt-2 '>Explore All Trending Apps on the Market developed by us</p>
+           </div>
+          <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 w-10/12 mx-auto'> 
+             {
+            products.map((p=> <HomeCadr key={p.id} p={p}></HomeCadr>))
+           }
+          </div>
+          
+           <div className='text-center p-5'>
+             <Link className='btn text-2xl hover:bg-indigo-500 hover:text-white ' to="/products">All Apps</Link>
+           </div>
+           
         </div>
     );
 };
