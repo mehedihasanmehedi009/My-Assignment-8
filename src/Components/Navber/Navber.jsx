@@ -29,11 +29,11 @@ const Navber = () => {
       </li>
       <li><NavLink to="/Installation" > <MdOutlineInstallDesktop />Installation</NavLink></li>
        </nav>
-      </ul>
+      </ul>     
     </div>
      <div className="flex  md:ml-12 items-center ">
         <NavLink to="/"> <img className=" items-center w-[40px]" src={Img} alt="" /></NavLink>
-       <h1 className="  text-3xl  font-bold   bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">HERO.IO</h1>
+       <h1 className="text-1xl md:text-3xl  font-bold   bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">HERO.IO</h1>
      </div>
   </div>
   <div className="navbar-center lg:block   hidden    ">
