@@ -24,7 +24,7 @@ import CardDiteils from "../Pages/CardDiteils";
     element:<Installation/>
   }
   ,{
-    path:"/product",
+    path:"/product/:id",
     element:<CardDiteils/>
   }
    ]

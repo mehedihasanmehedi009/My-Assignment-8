@@ -14,7 +14,7 @@ import { Link } from 'react-router';
 
 
 
- const Home = () => {
+ const Home = () => { 
     const { products} = useCoustomHook()
     const SumpolSard = products.slice(0,8)
     return (
@@ -76,7 +76,7 @@ import { Link } from 'react-router';
           </div>
           
            <div className='text-center p-5'>
-             <Link className='btn text-2xl hover:bg-indigo-500 hover:text-white ' to="/products">All Apps</Link>
+             <Link className='btn text-2xl   bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]  text-white ' to="/products">Show All</Link>
            </div>
            
         </div>
