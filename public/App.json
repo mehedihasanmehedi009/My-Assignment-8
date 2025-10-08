@@ -1,0 +1,379 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888879.png",
+    "title": "ChatEase",
+    "companyName": "SoftNova Ltd.",
+    "description": "Smart AI-based chatting app with real-time translation.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.6,
+    "downloads": 540000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 390 },
+      { "name": "5 star", "count": 560 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888857.png",
+    "title": "TaskFlow",
+    "companyName": "WorkSync Co.",
+    "description": "Manage daily tasks and projects easily across devices.",
+    "size": 36,
+    "reviews": 980,
+    "ratingAvg": 4.3,
+    "downloads": 310000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732084.png",
+    "title": "PhotoMagic",
+    "companyName": "PixelPro",
+    "description": "Enhance your photos with filters and AI adjustments.",
+    "size": 78,
+    "reviews": 3100,
+    "ratingAvg": 4.7,
+    "downloads": 1450000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1530 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732228.png",
+    "title": "FitTrack",
+    "companyName": "Healthify Labs",
+    "description": "Track your workouts and measure your progress daily.",
+    "size": 52,
+    "reviews": 2700,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1180 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+    "title": "SoundVibe",
+    "companyName": "BeatFlow Studio",
+    "description": "Listen to high-quality music and create playlists.",
+    "size": 89,
+    "reviews": 7800,
+    "ratingAvg": 4.8,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 440 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 5910 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+    "title": "NoteWise",
+    "companyName": "SmartEdge",
+    "description": "Organize notes and ideas with sync and backup.",
+    "size": 33,
+    "reviews": 900,
+    "ratingAvg": 4.2,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 310 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732200.png",
+    "title": "WeatherNow",
+    "companyName": "SkyMap Inc.",
+    "description": "Get real-time weather updates and forecasts.",
+    "size": 28,
+    "reviews": 1150,
+    "ratingAvg": 4.1,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 360 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733585.png",
+    "title": "TravelGo",
+    "companyName": "GoExplore",
+    "description": "Book hotels, flights, and plan your trips easily.",
+    "size": 65,
+    "reviews": 2300,
+    "ratingAvg": 4.4,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 680 },
+      { "name": "5 star", "count": 1100 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733579.png",
+    "title": "EduLearn",
+    "companyName": "SkillCore",
+    "description": "Learn new skills online with expert tutors.",
+    "size": 83,
+    "reviews": 4200,
+    "ratingAvg": 4.8,
+    "downloads": 2600000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2860 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+    "title": "Budgetify",
+    "companyName": "MoneyTrack",
+    "description": "Track your expenses and manage your budget smartly.",
+    "size": 41,
+    "reviews": 1500,
+    "ratingAvg": 4.5,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 660 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732075.png",
+    "title": "NewsPulse",
+    "companyName": "ByteMedia",
+    "description": "Stay updated with breaking news and live coverage.",
+    "size": 57,
+    "reviews": 3200,
+    "ratingAvg": 4.3,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1570 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732226.png",
+    "title": "DocuShare",
+    "companyName": "FileNet",
+    "description": "Share and manage documents securely in the cloud.",
+    "size": 49,
+    "reviews": 2100,
+    "ratingAvg": 4.4,
+    "downloads": 970000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 950 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+    "title": "GameZone",
+    "companyName": "PlayWorld",
+    "description": "Play exciting mini-games and challenge friends.",
+    "size": 101,
+    "reviews": 8800,
+    "ratingAvg": 4.9,
+    "downloads": 5700000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 7400 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888859.png",
+    "title": "ShopEase",
+    "companyName": "EcomVerse",
+    "description": "Shop from thousands of brands with exclusive deals.",
+    "size": 85,
+    "reviews": 7600,
+    "ratingAvg": 4.6,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 5300 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732103.png",
+    "title": "CryptoTrack",
+    "companyName": "ChainCore",
+    "description": "Monitor cryptocurrency prices and trends live.",
+    "size": 60,
+    "reviews": 2900,
+    "ratingAvg": 4.5,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1550 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968740.png",
+    "title": "LanguageUp",
+    "companyName": "LinguaTech",
+    "description": "Learn languages fast using AI-assisted lessons.",
+    "size": 70,
+    "reviews": 3400,
+    "ratingAvg": 4.7,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 2220 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732188.png",
+    "title": "MindCalm",
+    "companyName": "ZenStudio",
+    "description": "Meditation and sleep sounds to relax your mind.",
+    "size": 55,
+    "reviews": 4200,
+    "ratingAvg": 4.8,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 2800 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968697.png",
+    "title": "CodeMate",
+    "companyName": "DevSync",
+    "description": "Collaborative coding environment for teams.",
+    "size": 80,
+    "reviews": 3700,
+    "ratingAvg": 4.6,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2340 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888856.png",
+    "title": "Foodio",
+    "companyName": "TasteBite",
+    "description": "Order your favorite meals from local restaurants.",
+    "size": 92,
+    "reviews": 7200,
+    "ratingAvg": 4.7,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 5360 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732177.png",
+    "title": "FitMind",
+    "companyName": "WellNest",
+    "description": "Daily health tips and mind-body exercises.",
+    "size": 58,
+    "reviews": 2500,
+    "ratingAvg": 4.4,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732229.png",
+    "title": "StoryPod",
+    "companyName": "PodWave",
+    "description": "Listen to inspiring podcasts from top creators.",
+    "size": 67,
+    "reviews": 3100,
+    "ratingAvg": 4.7,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1910 }
+    ]
+  } ]

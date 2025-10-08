@@ -1,7 +1,17 @@
 import React from 'react';
-import { FaGooglePlay } from "react-icons/fa6";
- import { FaAppStoreIos } from "react-icons/fa";
-const Home = () => {
+ import Fi from"../../assets/fi_5977575 (1).png"
+ import Grp from"../../assets/Group.png"
+ import Ip from  "../../assets/Iphone.png"
+ import El24 from  "../../assets/Ellipse 24.png"
+  import El25 from  "../../assets/Ellipse 25.png"
+  import El26 from  "../../assets/Ellipse 26.png"
+  import El27 from  "../../assets/Ellipse 27.png"
+  import El28 from  "../../assets/Ellipse 28.png"
+  import El29 from  "../../assets/Ellipse 29.png"
+
+
+
+ const Home = () => {
  
     return (
         <div>
@@ -10,9 +20,24 @@ const Home = () => {
 <span className='bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps</h1>
 <p className='mt-4 text-gray-500 p-5'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
            </div>
-           <div className='text-center mt-3 mb-5 '>
-            <a className='btn text-[19px] p-5 ' href="https://play.google.com/?authuser=0"><FaGooglePlay /> Google Play</a>   
-           <a className='btn text-[19px] p-5' href="https://appstoreconnect.apple.com/"> <FaAppStoreIos /> App Store</a>
+           <div className='text-center  mt-3 mb-5 '>
+            <a className='btn text-[19px] p-5 ' href="https://play.google.com/?authuser=0"><img src={Grp} alt="" />Google Play</a>   
+           <a className='btn text-[19px] p-5' href="https://appstoreconnect.apple.com/"><img src={Fi} alt="" />App Store</a>
+           </div>
+           <div className=' flex justify-around'>
+              <div className=' md:block hidden lg:ml-[500px]  mt-[100px]'>
+                <div  className='ml-12 '><img src={El24} alt="" /></div>
+                <div><img className='m-5' src={El26} alt="" /></div>
+                <div><img className='' src={El28} alt="" /></div>
+              </div>
+              <div className='p-5 md:p-0'>
+            <img src={Ip} alt="" />
+              </div>
+              <div className=' md:block hidden lg:mr-[500px] mt-[100px]' >
+                  <div className='mr-12 '><img src={El25} alt="" /></div>
+                <div className='m-5'><img src={El27} alt="" /></div>
+                <div className='ml-12'> <img src={El29} alt="" /></div>
+              </div>
            </div>
         </div>
     );

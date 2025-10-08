@@ -1,6 +1,10 @@
  import "./Navber.css"
 import { NavLink } from 'react-router';
 import { FaGithub } from "react-icons/fa";
+import { IoHome } from "react-icons/io5";
+import { FaAppStoreIos } from "react-icons/fa";
+import { MdOutlineInstallDesktop } from "react-icons/md";
+import Img from "../../assets/logo-D9NHcesw 1.png"
 const Navber = () => {
   
     return (
@@ -19,20 +23,23 @@ const Navber = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
        <nav>
-          <li ><NavLink to="/" >Home</NavLink></li>
+          <li ><NavLink to="/" > <IoHome /> Home</NavLink></li>
       <li>
-         <NavLink to="/products">Apps</NavLink>  
+         <NavLink to="/products"> <FaAppStoreIos /> Apps</NavLink>  
       </li>
-      <li><NavLink to="/Installation" >Installation</NavLink></li>
+      <li><NavLink to="/Installation" > <MdOutlineInstallDesktop />Installation</NavLink></li>
        </nav>
       </ul>
     </div>
-    <a className="  text-3xl  font-bold   bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent md:ml-12 ">  HERO.IO</a>
+     <div className="flex  md:ml-12 items-center ">
+        <NavLink to="/"> <img className=" items-center w-[40px]" src={Img} alt="" /></NavLink>
+       <h1 className="  text-3xl  font-bold   bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">HERO.IO</h1>
+     </div>
   </div>
-  <div className="navbar-center md:block  hidden ">
+  <div className="navbar-center lg:block   hidden    ">
     <ul className="menu menu-horizontal px-1">
 <nav>
-        <NavLink to="/" >Home</NavLink>
+        <NavLink to="/" > Home</NavLink>
 
          <NavLink to="/products">Apps</NavLink>  
 
@@ -41,7 +48,7 @@ const Navber = () => {
     </ul>
   </div>
   <div className="navbar-end">
-   <a className="btn text-[18px] text-white bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]  md:mr-12"><FaGithub /> Contribute</a>
+   <a href="https://github.com/mehedihasanmehedi009" className="btn text-[18px] text-white bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]  md:mr-12"><FaGithub /> Contribute</a>
   </div>
 </div>
         </>
