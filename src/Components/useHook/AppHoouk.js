@@ -10,7 +10,7 @@ const useCoustomHook = () => {
     axios("../App.json")
     .then((data)=>  setProducts(data.data))
     .catch(err=>setError(err)
-    .finally(()=>setLoading(false))
+    .finally(()=>setLoading())
 )
  },[])
  return{products,loading,error}

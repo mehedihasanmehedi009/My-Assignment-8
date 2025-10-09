@@ -4,6 +4,9 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { Link } from 'react-router';
 const AppCard = ({p}) => {
     const {id}=p
+        if(p < 0 ){
+      return "App non Found"
+    }
     return (
         <>
           <Link to={`/product/${id}`}>

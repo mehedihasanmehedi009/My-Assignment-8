@@ -19,7 +19,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
     let updatadList = ExistingList.filter(p=>p.id !==id)
     setWishlist(updatadList)
   localStorage.setItem("Wishlist",JSON.stringify( updatadList))
-     toast("Uninstall Complyat... ");
+     toast("Uninstall complyt-... ");
   }
   
   const sortedItem = () => {
@@ -64,10 +64,10 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
       <div className=''>
         {sortedItem().map(p => (
-          <div key={p.id} className="card card-side bg-base-100 shadow-sm mt-9  ">
+          <div key={p.id} className="card card-side bg-base-100 shadow-sm mt-9   ">
             <div className='md:p-5 '>
               <figure className=' md:p-3 bg-gray-300'>
-              <img className=' md:w-[80px] ' src={p.image} alt={p.name} />
+              <img className=' w-[90px] mt-4    p-2' src={p.image} alt={p.name} />
             </figure>
             </div>
             <div className="card-body">
@@ -77,7 +77,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
                   <h2 className="card-title md:mb-5 md:text-2xl text-[12px]">Forest:{p.title}</h2>
                  </div>
                  <div className='flex  space-x-2  md:space-x-7  md:w-full items-center'>
-                               <div className='flex  items-center text-[#00D390] bg-green-200 md:p-2 rounded-lg'>
+                               <div className='flex  items-center   text-[#00D390] bg-green-200 md:p-2 rounded-lg'>
                                  <MdOutlineFileDownload />
                                  <h1 className='md:ml-2'>{p.downloadsMillion ? `${p.downloadsMillion}M` : p.downloads}</h1>
                                </div>
@@ -95,7 +95,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
               <div>
                  <div className="card-actions 
               ">
-                <button onClick={()=>handelRemove(p.id)} className="btn w-[50px] md:w-full text-[10px] md:text-2xl text-white bg-[#00D390]  ">Uninstall</button>
+                <button onClick={()=>handelRemove(p.id)} className="btn w-[50px] md:w-full md:h-[60px] text-[10px] md:text-[20px]  font-bold  text-white bg-[#00D390]  "> <span className='py-4'> Uninstall</span></button>
               </div>
               </div>
           </div>

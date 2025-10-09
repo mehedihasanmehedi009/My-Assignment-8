@@ -21,7 +21,7 @@ const Navber = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-62 p-2 shadow">
        <nav>
           <li ><NavLink to="/" > <IoHome /> Home</NavLink></li>
       <li>
@@ -32,7 +32,7 @@ const Navber = () => {
       </ul>     
     </div>
      <div className="flex  md:ml-12 items-center ">
-        <NavLink to="/"> <img className=" items-center w-[40px]" src={Img} alt="" /></NavLink>
+        <NavLink to="/"> <img className=" items-center w-[40px] animate-spin " src={Img} alt="" /></NavLink>
        <h1 className="text-1xl md:text-3xl  font-bold   bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">HERO.IO</h1>
      </div>
   </div>

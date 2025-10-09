@@ -10,8 +10,9 @@ const Apps = () => {
   const term = serch.trim().toLocaleLowerCase();
   const serchProduct = term
     ? products.filter(product => product.title.toLocaleLowerCase().includes(term))
-    : products;
-   
+    : products; 
+
+ 
   return (
     <div>
       <div className="text-center mt-5">

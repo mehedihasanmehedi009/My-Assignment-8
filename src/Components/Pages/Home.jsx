@@ -30,17 +30,18 @@ import { Link } from 'react-router';
            </div>
            <div className=' flex justify-around'>
               <div className=' md:block hidden lg:ml-[500px]  mt-[100px]'>
-                <div  className='ml-12 '><img src={El24} alt="" /></div>
-                <div><img className='m-5' src={El26} alt="" /></div>
-                <div><img className='' src={El28} alt="" /></div>
+                <div  className='ml-12 '><img className='hover:scale-150 hover:rotate-100 transition animate-pulse' src={El24} alt="" /></div>
+                <div><img className='m-5 hover:scale-150 hover:-rotate-100 transition 
+                  ' src={El26} alt="" /></div>
+                <div><img className=' hover:scale-200 transform-view animate-bounce ' src={El28} alt="" /></div>
               </div>
               <div className='px-4 md:px-0'>
             <img src={Ip} alt="" />
               </div>
               <div className=' md:block hidden lg:mr-[500px] mt-[100px]' >
-                  <div className='mr-12 '><img src={El25} alt="" /></div>
-                <div className='m-5'><img src={El27} alt="" /></div>
-                <div className='ml-12'> <img src={El29} alt="" /></div>
+                  <div className='mr-12  hover:scale-150 hover:-rotate-100 transition animate-pulse '><img src={El25} alt="" /></div>
+                <div className='m-5 hover:scale-150 hover:rotate-100 transition '><img src={El27} alt="" /></div>
+                <div className='ml-12 hover:scale-200 transform-view animate-bounce'> <img src={El29} alt="" /></div>
               </div>
            </div>
            <div className=' bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]'>
@@ -76,7 +77,7 @@ import { Link } from 'react-router';
           </div>
           
            <div className='text-center p-5'>
-             <Link className='btn text-2xl   bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]  text-white ' to="/products">Show All</Link>
+             <Link className='btn text-2xl   bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]  text-white   animate-pulse ' to="/products">Show All</Link>
            </div>
            
         </div>

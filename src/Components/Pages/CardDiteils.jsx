@@ -5,7 +5,15 @@ import IMGS from"../../assets/fi_1828884.png"
 import IMGL from"../../assets/fi_17817684.png"
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
-
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+  ResponsiveContainer,
+} from "recharts"
 const CardDiteils = () => { 
     const [isSelected,setSelected]=useState(false)
     const { products} = useCoustomHook()
@@ -18,7 +26,7 @@ const CardDiteils = () => {
     
  
            const {image,ratingAvg
-,downloads,companyName,reviews}= Data
+,downloads,companyName,reviews,ratings}= Data
 
 const handelerDetils = () =>{
     const ExistingList =JSON.parse( localStorage.getItem("Wishlist"))
@@ -86,21 +94,43 @@ const handelerDetils = () =>{
              </div>
            </div>
             </div>
-            <div>
-
-            </div>
         </div>
             <div className="border-1 border-b-gray-200"></div>
+          {/* <div className="md:w-full md:h-full  mr-19">
+      <h2 className="text-lg font-semibold mb-3">Ratings</h2>
+          <BarChart
+  width={500}
+  height={300}
+  data={ratings}
+  layout="vertical"
+  margin={{ top: 10, right: 20, left: 30, bottom: 0 }}
+>
+  <XAxis type="number" />
+  <YAxis dataKey="name" type="category" />
+  <Bar dataKey="count" fill="green" barSize={25} radius={[4, 4, 4, 4]} />
+</BarChart>
 
-            <div className="mb-9">
-
-
-            </div>
-              <div className="border-1 border-b-gray-200"></div>
-            <div>
+           
+          </div> */}
+            <div className="w-full h-[300px] sm:h-[350px]   p-4 rounded-xl  ">
+      <h2 className=" md:text-4xl font-semibold mb-2">Ratings</h2>
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart
+          data={ratings}
+          layout="vertical">
+          <CartesianGrid strokeDasharray="3 3" vertical={false} />
+          <XAxis type="number" />
+          <YAxis dataKey="name" type="category" />
+          <Tooltip />
+          <Bar dataKey="count" fill="#FF8800" barSize={25} radius={[4, 4, 4, 4]} />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+             <div className="border-1 border-b-gray-200 mt-7 mb-3 "></div>
+            <div className="mt-9">
                 <h3 className="text-[24px] font-bold
                 mb-3">Description</h3>
-                <p className="text-[20px] text-gray-600">This focus app takes the proven Pomodoro technique and makes it even more practical for modern lifestyles. Instead of just setting a timer, it builds a complete environment for deep work, minimizing distractions and maximizing concentration. Users can create custom work and break intervals, track how many sessions they complete each day, and review detailed statistics about their focus habits over time. The design is minimal and calming, reducing cognitive load so you can focus entirely on the task at hand. Notifications gently let you know when to pause and when to resume, helping you maintain a healthy rhythm between work and rest.
+                <p className="text-[20px] text-gray-600 mb-3 ">This focus app takes the proven Pomodoro technique and makes it even more practical for modern lifestyles. Instead of just setting a timer, it builds a complete environment for deep work, minimizing distractions and maximizing concentration. Users can create custom work and break intervals, track how many sessions they complete each day, and review detailed statistics about their focus habits over time. The design is minimal and calming, reducing cognitive load so you can focus entirely on the task at hand. Notifications gently let you know when to pause and when to resume, helping you maintain a healthy rhythm between work and rest.
  <br /><br />
 A unique feature of this app is the integration of task lists with timers. You can assign each task to a specific Pomodoro session, making your schedule more structured. The built-in analytics show not only how much time you’ve worked but also which tasks consumed the most energy. This allows you to reflect on your efficiency and adjust your workflow accordingly. The app also includes optional background sounds such as white noise, nature sounds, or instrumental music to create a distraction-free atmosphere.
 <br />

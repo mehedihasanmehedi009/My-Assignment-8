@@ -1,12 +1,13 @@
  nav  a.active {
  gap: 4px;
  color:blue;
-  text-decoration: underline;
+ border: 1px solid blue;
+ border-radius: 12px;
   font-weight: 800;
 }
  
 nav a{
-  padding: 40px;
+  padding: 10px;
   font-size: 18px;
    gap: 20px;
    font-weight: 600;
