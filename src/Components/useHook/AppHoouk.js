@@ -7,7 +7,7 @@ const useCoustomHook = () => {
 
  useEffect(() => {
     setLoading(true)
-    axios("../App.json")
+    axios("/App.json")
     .then((data)=>  setProducts(data.data))
     .catch(err=>setError(err)
     .finally(()=>setLoading())

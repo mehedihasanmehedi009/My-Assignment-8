@@ -14,10 +14,11 @@ const MainLoyed = () => {
       {isLoading ? (
         <div className="flex justify-center items-center flex-1 bg-gray-50">
           <div className="relative w-16 h-16">
-            <div className="absolute w-full h-full border-4 border-blue-400 rounded-full animate-ping opacity-75"></div>
-            <div className="absolute w-full h-full border-4 border-blue-500 rounded-full border-t-transparent animate-spin"></div>
-          </div>
+             
+          <div className="w-12 h-12 border-4 border-dashed rounded-full animate-spin border-blue-600"></div>
         </div>
+          </div>
+   
       ) : (
         <div className="flex-1">
           <Outlet />

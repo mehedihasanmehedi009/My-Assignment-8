@@ -10,11 +10,12 @@ import React from 'react';
   import El29 from  "../../assets/Ellipse 29.png"
 import useCoustomHook from '../useHook/AppHoouk';
 import HomeCadr from './HomeCadr';
-import { Link } from 'react-router';
+import { Link} from 'react-router';
 
 
 
  const Home = () => { 
+
     const { products} = useCoustomHook()
     const SumpolSard = products.slice(0,8)
     return (
@@ -70,6 +71,7 @@ import { Link } from 'react-router';
              <h1 className='text-5xl font-bold'>Trending Apps</h1>
              <p className='text-gray-400 mt-2 '>Explore All Trending Apps on the Market developed by us</p>
            </div>
+            
           <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 w-10/12 mx-auto'> 
              {
              SumpolSard.map((p=> <HomeCadr key={p.id} p={p}></HomeCadr>))

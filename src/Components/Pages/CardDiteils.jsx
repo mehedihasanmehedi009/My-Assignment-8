@@ -1,4 +1,4 @@
-import {  useParams } from "react-router";
+import {  useLoaderData, useParams } from "react-router";
 import useCoustomHook from "../useHook/AppHoouk";
 import IMGD from"../../assets/fi_18110198.png"
 import IMGS from"../../assets/fi_1828884.png"
@@ -15,6 +15,7 @@ import {
   ResponsiveContainer,
 } from "recharts"
 const CardDiteils = () => { 
+  const data = useLoaderData()
     const [isSelected,setSelected]=useState(false)
     const { products} = useCoustomHook()
     const {id} =useParams()

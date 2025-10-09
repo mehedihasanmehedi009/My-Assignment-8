@@ -1,12 +1,11 @@
-import React from 'react';
+
 import { FaStarHalfAlt } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { Link } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 const AppCard = ({p}) => {
+   const data = useLoaderData()
     const {id}=p
-        if(p < 0 ){
-      return "App non Found"
-    }
+     
     return (
         <>
           <Link to={`/product/${id}`}>

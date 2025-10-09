@@ -14,18 +14,23 @@ import CardDiteils from "../Pages/CardDiteils";
     hydrateFallbackElement: <span className="loading loading-spinner text-error"></span>,
    children:[
      { index:true,
-    element:<Home/>
+    element:<Home/>,
+     loader:()=>fetch("/App.json")
   }
   ,{
     path:"/products",
-    element:<Apps/>
+    element:<Apps/>,
+     loader:()=>fetch("/App.json")
+ 
   },{
     path:"/Installation",
-    element:<Installation/>
+    element:<Installation/>,
+    loader:()=>fetch("/App.json")
   }
   ,{
     path:"/product/:id",
-    element:<CardDiteils/>
+    element:<CardDiteils/>,
+     loader:()=>fetch("/App.json")
   }
    ]
   }

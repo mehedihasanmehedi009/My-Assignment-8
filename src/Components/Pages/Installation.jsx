@@ -4,8 +4,10 @@
      import React, { useEffect, useState } from 'react';
    import { FaStarHalfAlt } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { useLoaderData } from 'react-router';
 
  const Installation = () =>{
+  const data = useLoaderData()
   const [wishlist, setWishlist] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
 
@@ -63,6 +65,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
       </div>
 
       <div className=''>
+        
         {sortedItem().map(p => (
           <div key={p.id} className="card card-side bg-base-100 shadow-sm mt-9   ">
             <div className='md:p-5 '>
