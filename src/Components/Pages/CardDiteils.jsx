@@ -37,11 +37,11 @@ const handelerDetils = () =>{
        <div className=" w-10/12 mx-auto mt-5">
          <div className="  md:flex lg:flex  ">
             <div className="w-1/3 lg:mr-5 lg:ml-18 pr-9   mb-7 md:mb-0 ">
-                <img className="w-[200px] py-8 px-3 bg-gray-200 rounded-2xl" src={image} alt="" />
+                <img className="w-[200px] md:py-8 md:px-3 bg-gray-200 rounded-2xl" src={image} alt="" />
             </div>
             <div className="w-1/1 flex-col-reverse  ">
                <div>
-                 <h1 className="text-4xl font-bold ">SmPlan:ToDo List with Reminder</h1>
+                 <h1 className=" text-2xl md:text-4xl font-bold ">SmPlan:ToDo List with Reminder</h1>
                 <p className=" mt-3 mb-3 font-bold">Developed by: <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent tex-[20px]">{companyName}</span> </p>
                </div>
                <div className="border-1  border-b-gray-200 "></div>

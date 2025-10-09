@@ -14,6 +14,14 @@ import { MdOutlineFileDownload } from "react-icons/md";
     if (existingList) setWishlist(existingList);
   }, []);
 
+   const  handelRemove = id =>{
+  const ExistingList = JSON.parse(localStorage.getItem("Wishlist"));
+    let updatadList = ExistingList.filter(p=>p.id !==id)
+    setWishlist(updatadList)
+  localStorage.setItem("Wishlist",JSON.stringify( updatadList))
+     toast("Uninstall Complyat... ");
+  }
+  
   const sortedItem = () => {
     if (sortOrder === "ratingAvg-acd") {
       return [...wishlist].sort((a, b) => a.ratingAvg - b.ratingAvg);
@@ -23,32 +31,30 @@ import { MdOutlineFileDownload } from "react-icons/md";
       return wishlist;
     }
   };
-  const  handelRemove = id =>{
-  const ExistingList = JSON.parse(localStorage.getItem("Wishlist"));
-    let updatadList = ExistingList.filter(p=>p.id !==id)
-    setWishlist(updatadList)
-  localStorage.setItem("Wishlist",JSON.stringify( updatadList))
-     toast("Installation started... ");
-  }
-
+ 
   return (
     <>
-     
+     <div className='text-center mt-8 mb-6'>
 
-      <div className='w-9/12 mx-auto'>  
+      <h1 className=' text-2xl md:text-4xl font-bold'>
+        Your Installed Apps
+      </h1>
+      <p className='text-gray-500 mt-2 p-2'>Explore All Trending Apps on the Market developed by us</p>
+     </div>
+
+      <div className='p-2 md:w-9/12 mx-auto'>  
 <div className="mt-5">
         <div className="flex justify-between mb-4">
           <h1 className="text-3xl font-bold">
-         ({sortedItem().length}) Products Found 
+         {sortedItem().length} Apps Found 
           </h1>
 
           <label className='form-control w-full max-w-xs'>
             <select
               className='select select-bordered'
               value={sortOrder}
-              onChange={e => setSortOrder(e.target.value)}
-            >
-              <option value="none">Sort by ratingAvg</option>
+              onChange={e => setSortOrder(e.target.value)}>
+              <option value="none">Sort by RatingAvg</option>
               <option value="ratingAvg-acd">Low → High</option>
               <option value="ratingAvg-dac">High → Low</option>
             </select>
@@ -59,26 +65,26 @@ import { MdOutlineFileDownload } from "react-icons/md";
       <div className=''>
         {sortedItem().map(p => (
           <div key={p.id} className="card card-side bg-base-100 shadow-sm mt-9  ">
-            <div className='p-5 '>
-              <figure className='p-3 bg-gray-300'>
-              <img className='w-[80px] ' src={p.image} alt={p.name} />
+            <div className='md:p-5 '>
+              <figure className=' md:p-3 bg-gray-300'>
+              <img className=' md:w-[80px] ' src={p.image} alt={p.name} />
             </figure>
             </div>
             <div className="card-body">
           <div className='flex justify-between items-center'>
                 <div className=''>
                    <div >
-                  <h2 className="card-title mb-5">Forest:{p.title}</h2>
+                  <h2 className="card-title md:mb-5 md:text-2xl text-[12px]">Forest:{p.title}</h2>
                  </div>
-                 <div className='flex  space-x-7  w-full items-center'>
-                               <div className='flex  items-center text-[#00D390] bg-green-200 p-2 rounded-lg'>
+                 <div className='flex  space-x-2  md:space-x-7  md:w-full items-center'>
+                               <div className='flex  items-center text-[#00D390] bg-green-200 md:p-2 rounded-lg'>
                                  <MdOutlineFileDownload />
-                                 <h1 className='ml-2'>{p.downloadsMillion ? `${p.downloadsMillion}M` : p.downloads}</h1>
+                                 <h1 className='md:ml-2'>{p.downloadsMillion ? `${p.downloadsMillion}M` : p.downloads}</h1>
                                </div>
                                
-                               <div className='flex items-center text-[#FF8811] bg-amber-100 p-2 rounded-lg'>
+                               <div className='flex items-center text-[#FF8811] bg-amber-100 md:p-2 rounded-lg'>
                                  <FaStarHalfAlt />
-                     <h1 className='ml-2'>{p.ratingAvg}</h1>
+                     <h1 className='md:ml-2'>{p.ratingAvg}</h1>
                </div> 
                       <div>
                 <p className='text-gray-400'>258 MB</p>
@@ -89,7 +95,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
               <div>
                  <div className="card-actions 
               ">
-                <button onClick={()=>handelRemove(p.id)} className="btn text-white bg-[#00D390]  ">Uninstall</button>
+                <button onClick={()=>handelRemove(p.id)} className="btn w-[50px] md:w-full text-[10px] md:text-2xl text-white bg-[#00D390]  ">Uninstall</button>
               </div>
               </div>
           </div>
