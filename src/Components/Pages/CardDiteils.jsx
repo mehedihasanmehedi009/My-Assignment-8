@@ -1,46 +1,88 @@
-import { useParams } from "react-router";
+import {  useParams } from "react-router";
 import useCoustomHook from "../useHook/AppHoouk";
+import IMGD from"../../assets/fi_18110198.png"
+import IMGS from"../../assets/fi_1828884.png"
+import IMGL from"../../assets/fi_17817684.png"
+import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 const CardDiteils = () => { 
+    const [isSelected,setSelected]=useState(false)
     const { products} = useCoustomHook()
     const {id} =useParams()
-  const  Data = products .find(P => String(P.id) === id)||{}
-           const {image,title,ratingAvg
-,downloads}= Data
+ 
+  const  Data = products .find(P => String(P.id) === id)|| 
+ {
+    
+      }
+    
+ 
+           const {image,ratingAvg
+,downloads,companyName,reviews}= Data
+
+const handelerDetils = () =>{
+    const ExistingList =JSON.parse( localStorage.getItem("Wishlist"))
+       let updatadList=[]
+       if(ExistingList){
+          const isDuplicate = ExistingList.some(p => p.id === Data.id)
+          if (isDuplicate) return 
+         updatadList=[...ExistingList,Data] 
+       }
+       else{
+        updatadList.push(Data)
+       }
+  localStorage.setItem("Wishlist",JSON.stringify( updatadList))}
     return (
         <>
        <div className=" w-10/12 mx-auto mt-5">
          <div className="  md:flex lg:flex  ">
             <div className="w-1/3 lg:mr-5 lg:ml-18 pr-9   mb-7 md:mb-0 ">
-                <img className="w-[200px]" src={image} alt="" />
+                <img className="w-[200px] py-8 px-3 bg-gray-200 rounded-2xl" src={image} alt="" />
             </div>
             <div className="w-1/1 flex-col-reverse  ">
                <div>
                  <h1 className="text-4xl font-bold ">SmPlan:ToDo List with Reminder</h1>
-                <p className=" mt-3 mb-3">Developed by <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent tex-[20px]">productive.io</span> </p>
+                <p className=" mt-3 mb-3 font-bold">Developed by: <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent tex-[20px]">{companyName}</span> </p>
                </div>
-               <div className="border-1 border-b-gray-400"></div>
+               <div className="border-1  border-b-gray-200 "></div>
                   <div className=''>
              
              <div className=' flex mt-5  '>
               <div >
-              <p className=' '>Downloads</p>
-              <h1 className='md:text-5xl font-bold  mt-2'>29.6M</h1>
+                <div className="ml-5 md:w-full w-[20px]">
+                    <img  src={ IMGD} alt="" />
+                </div>
+              <p className='font-bold '>Downloads</p>
+              <h1 className='md:text-5xl font-bold  mt-2'>{downloads}</h1>
               
              </div>
-            <div className="ml-19">
-              <p className=''>Total Reviews</p>
-              <h1 className='md:text-5xl font-bold  mt-2'>906K</h1>
+             
+            <div className="md:ml-19 ml-6">
+                  <div className="ml-5 md:w-full w-[20px]">
+                    <img  src={ IMGL} alt="" />
+                </div>
+              <p className='font-bold'>Total Reviews</p>
+              <h1 className='md:text-5xl font-bold  mt-2'>{reviews}</h1>
               
              </div>
-             <div className="ml-19">
-              <p className=''>Average Ratings</p>
-              <h1 className='md:text-5xl font-bold  mt-2'>132+</h1>
-              
+             <div className=" md:ml-19 ml-6">
+                 
+                 <div className="ml-5 md:w-full w-[20px]">
+                    <img  src={ IMGS} alt="" />
+                </div>
+              <p className='font-bold'>Average Ratings</p>
+              <h1 className='md:text-5xl font-bold  mt-2'>{ratingAvg}</h1>
              </div>
+
              </div>
              <div>
-                 <button className="btn text-white bg-[#00D390] mt-4 mb-4">Install Now (291 MB)</button>
+                 <button onClick={()=>{
+                     handelerDetils()
+                      setSelected(true)
+                     toast("Installation started...");
+                 }
+                 }   
+                  className="btn text-white bg-[#00D390] mt-4 mb-4">{isSelected ===true? "Installed":"Install Now (291 MB)"}</button>
              </div>
            </div>
             </div>
@@ -48,10 +90,13 @@ const CardDiteils = () => {
 
             </div>
         </div>
-            <div className="border-1 border-b-gray-400"></div>
+            <div className="border-1 border-b-gray-200"></div>
+
             <div className="mb-9">
 
+
             </div>
+              <div className="border-1 border-b-gray-200"></div>
             <div>
                 <h3 className="text-[24px] font-bold
                 mb-3">Description</h3>
@@ -64,6 +109,7 @@ For people who struggle with procrastination, the app provides motivational stre
 
             </div>
        </div>
+           <ToastContainer />
         </>
     );
 };

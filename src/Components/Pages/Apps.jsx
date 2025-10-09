@@ -1,7 +1,6 @@
  import { useState } from "react";
 import useCoustomHook from "../useHook/AppHoouk";
-import { FaStarHalfAlt } from "react-icons/fa";
-import { MdOutlineFileDownload } from "react-icons/md";
+ 
 import AppCard from "./AppCard";
 
 const Apps = () => {
@@ -12,7 +11,7 @@ const Apps = () => {
   const serchProduct = term
     ? products.filter(product => product.title.toLocaleLowerCase().includes(term))
     : products;
-
+   
   return (
     <div>
       <div className="text-center mt-5">
@@ -23,7 +22,7 @@ const Apps = () => {
         <h1 className="text-2xl md:text-3xl font-bold">
           Products Length ({serchProduct.length})
         </h1>
-
+        
         <label className="input">
           <input
             value={serch}
@@ -37,7 +36,7 @@ const Apps = () => {
 
       <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 w-10/12 mx-auto p-4'>
         {
-          serchProduct.map(p=> <AppCard key={p.id} p={p}></AppCard>)
+          serchProduct.map((p=> <AppCard key={p.id} p={p}></AppCard>))
         }
       </div>
     </div>
