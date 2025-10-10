@@ -69,19 +69,19 @@ import { useLoaderData } from 'react-router';
         {sortedItem().map(p => (
      <div key={p.id} className="card md:card-side bg-base-100 shadow-sm mt-5">
           <figure className='py-5 px-3'>
-              <img className='md:w-[100px] w-[50px] rounded-2xl md:p-4 p-2 bg-gray-300' src={p.image} alt={p.name} />
+              <img className='w-[100px]  rounded-2xl md:p-4 p-2 bg-gray-300' src={p.image} alt={p.name} />
             </figure>
              <div className="card-body">
                 <div className='text-center md:text-left'>
-                   <h2 className=" text-[10px] md:text-[20px]    ">{p.title}</h2>
+                   <h2 className="  text-[20px]    ">{p.title}</h2>
                 </div>
                 <div className='flex  space-x-2  md:space-x-7  md:w-full items-center  md:justify-start  justify-center mx-auto   '>
-                               <div className='flex  items-center   text-[#00D390] bg-green-200 md:p-2 rounded-lg'>
+                               <div className='flex  items-center   text-[#00D390] bg-green-200 p-2 rounded-lg'>
                                  <MdOutlineFileDownload />
                                  <h1 className='md:ml-2'>{p.downloadsMillion ? `${p.downloadsMillion}M` : p.downloads}</h1>
                                </div>
                                
-                               <div className='flex items-center text-[#FF8811] bg-amber-100 md:p-2 rounded-lg'>
+                               <div className='flex items-center text-[#FF8811] bg-amber-100 p-2 rounded-lg'>
                                  <FaStarHalfAlt />
                      <h1 className='md:ml-2'>{p.ratingAvg}</h1>
                </div> 
@@ -95,9 +95,9 @@ import { useLoaderData } from 'react-router';
       
               <button
                 onClick={() => handleRemove(p.id)}
-                className='btn bg-[#00D390] w-[40px] md:w-[80px] text-white'
+                className='btn bg-[#00D390]  w-[80px] text-white'
               >
-           <span className='text-[10px] md:text-[17px]'> Uninstall</span>
+           <span className=' '> Uninstall</span>
               </button>
             </div>
           </div>
