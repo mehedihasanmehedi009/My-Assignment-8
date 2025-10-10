@@ -69,7 +69,7 @@ import { useLoaderData } from 'react-router';
         {sortedItem().map(p => (
      <div key={p.id} className="card md:card-side bg-base-100 shadow-sm mt-5">
           <figure className='py-5 px-3'>
-              <img className='w-[100px]  rounded-2xl md:p-4 p-2 bg-gray-300' src={p.image} alt={p.name} />
+              <img className='md:w-[100px] w-[70px] rounded-2xl md:p-4 p-2 bg-gray-300' src={p.image} alt={p.name} />
             </figure>
              <div className="card-body">
                 <div className='text-center md:text-left'>
