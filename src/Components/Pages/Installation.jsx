@@ -69,10 +69,10 @@ import { useLoaderData } from 'react-router';
         {sortedItem().map(p => (
      <div key={p.id} className="card card-side bg-base-100 shadow-sm mt-5">
           <figure className='p-8'>
-              <img className='w-[100px] rounded-2xl p-4  bg-gray-300' src={p.image} alt={p.name} />
+              <img className='md:w-[100px] w-[50px] rounded-2xl p-4  bg-gray-300' src={p.image} alt={p.name} />
             </figure>
              <div className="card-body">
-              <h2 className="card-title">{p.title}</h2>
+              <h2 className="card-title text-[10px] md:text-[20px]">{p.title}</h2>
                 <div className='flex  space-x-2  md:space-x-7  md:w-full items-center'>
                                <div className='flex  items-center   text-[#00D390] bg-green-200 md:p-2 rounded-lg'>
                                  <MdOutlineFileDownload />
@@ -93,7 +93,7 @@ import { useLoaderData } from 'react-router';
       
               <button
                 onClick={() => handleRemove(p.id)}
-                className='btn btn-outline bg-[#00D390] text-white'
+                className='btn btn-outline bg-[#00D390] w-[5rem] text-white'
               >
             Uninstall
               </button>
