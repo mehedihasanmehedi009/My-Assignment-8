@@ -16,7 +16,7 @@ import { useLoaderData } from 'react-router';
     if (existingList) setWishlist(existingList);
   }, []);
 
-   const  handelRemove = id =>{
+   const  handleRemove = id =>{
   const ExistingList = JSON.parse(localStorage.getItem("Wishlist"));
     let updatadList = ExistingList.filter(p=>p.id !==id)
     setWishlist(updatadList)
@@ -45,9 +45,9 @@ import { useLoaderData } from 'react-router';
      </div>
 
       <div className='p-2 md:w-9/12 mx-auto'>  
-<div className="mt-5">
+<div className="mt-5 md:p-0 p-2">
         <div className="flex justify-between mb-4">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-2xl font-bold">
          {sortedItem().length} Apps Found 
           </h1>
 
@@ -64,22 +64,16 @@ import { useLoaderData } from 'react-router';
         </div>
       </div>
 
-      <div className=''>
+      <div className='p-4'>
         
         {sortedItem().map(p => (
-          <div key={p.id} className="card card-side bg-base-100 shadow-sm mt-9   ">
-            <div className='md:p-5 '>
-              <figure className=' md:p-3 bg-gray-300'>
-              <img className=' w-[90px] mt-4    p-2' src={p.image} alt={p.name} />
+     <div key={p.id} className="card card-side bg-base-100 shadow-sm mt-5">
+          <figure className='p-8'>
+              <img className='w-[100px] rounded-2xl p-4  bg-gray-300' src={p.image} alt={p.name} />
             </figure>
-            </div>
-            <div className="card-body">
-          <div className='flex justify-between items-center'>
-                <div className=''>
-                   <div >
-                  <h2 className="card-title md:mb-5 md:text-2xl text-[12px]">Forest:{p.title}</h2>
-                 </div>
-                 <div className='flex  space-x-2  md:space-x-7  md:w-full items-center'>
+             <div className="card-body">
+              <h2 className="card-title">{p.title}</h2>
+                <div className='flex  space-x-2  md:space-x-7  md:w-full items-center'>
                                <div className='flex  items-center   text-[#00D390] bg-green-200 md:p-2 rounded-lg'>
                                  <MdOutlineFileDownload />
                                  <h1 className='md:ml-2'>{p.downloadsMillion ? `${p.downloadsMillion}M` : p.downloads}</h1>
@@ -93,18 +87,20 @@ import { useLoaderData } from 'react-router';
                 <p className='text-gray-400'>258 MB</p>
                 </div>   
               </div>
-              
-              </div>
-              <div>
-                 <div className="card-actions 
-              ">
-                <button onClick={()=>handelRemove(p.id)} className="btn w-[50px] md:w-full md:h-[60px] text-[10px] md:text-[20px]  font-bold  text-white bg-[#00D390]  "> <span className='py-4'> Uninstall</span></button>
-              </div>
-              </div>
-          </div>
+             
             </div>
-            
+            <div className='pr-4 flex items-center gap-3'>
+      
+              <button
+                onClick={() => handleRemove(p.id)}
+                className='btn btn-outline bg-[#00D390] text-white'
+              >
+            Uninstall
+              </button>
+            </div>
           </div>
+        
+
         ))}
       </div>
       </div>
