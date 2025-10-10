@@ -67,13 +67,15 @@ import { useLoaderData } from 'react-router';
       <div className='p-4'>
         
         {sortedItem().map(p => (
-     <div key={p.id} className="card card-side bg-base-100 shadow-sm mt-5">
+     <div key={p.id} className="card md:card-side bg-base-100 shadow-sm mt-5">
           <figure className='py-5 px-3'>
               <img className='md:w-[100px] w-[50px] rounded-2xl md:p-4 p-2 bg-gray-300' src={p.image} alt={p.name} />
             </figure>
              <div className="card-body">
-              <h2 className="card-title text-[10px] md:text-[20px]">{p.title}</h2>
-                <div className='flex  space-x-2  md:space-x-7  md:w-full items-center'>
+                <div className='text-center md:text-left'>
+                   <h2 className=" text-[10px] md:text-[20px]    ">{p.title}</h2>
+                </div>
+                <div className='flex  space-x-2  md:space-x-7  md:w-full items-center  md:justify-start  justify-center mx-auto   '>
                                <div className='flex  items-center   text-[#00D390] bg-green-200 md:p-2 rounded-lg'>
                                  <MdOutlineFileDownload />
                                  <h1 className='md:ml-2'>{p.downloadsMillion ? `${p.downloadsMillion}M` : p.downloads}</h1>
@@ -89,11 +91,11 @@ import { useLoaderData } from 'react-router';
               </div>
              
             </div>
-            <div className='md:pr-4 flex items-center gap-3'>
+            <div className='md:pr-4 md:flex md:items-center justify-center mx-auto mb-4 md:mb-0 gap-3'>
       
               <button
                 onClick={() => handleRemove(p.id)}
-                className='btn btn-outline bg-[#00D390] w-[40px] md:w-[80px] text-white'
+                className='btn bg-[#00D390] w-[40px] md:w-[80px] text-white'
               >
            <span className='text-[10px] md:text-[17px]'> Uninstall</span>
               </button>
